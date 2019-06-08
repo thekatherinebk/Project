@@ -1,0 +1,18 @@
+.gradient
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 9px
+	z-index: 30
+
+	&__line
+		width: 100%
+		height: 3px
+		background-color: $c-gradient
+
+		&:nth-child(2)
+			background-color: rgba($c-gradient, .80)
+		
+		&:nth-child(3)
+			background-color: rgba($c-gradient, .5)

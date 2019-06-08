@@ -1,0 +1,40 @@
+.header
+	position: fixed
+	flex-direction: column
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 25
+	background-color: #fff
+
+	&__top
+		width: 100%
+		background-color: $c-bgc
+
+	&__top-container
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		min-height: 45px
+		padding-right: get-vw(145px)
+		padding-left: get-vw(145px)
+		padding-top: 9px
+
+
+	&__top-item
+		display: flex
+
+		&:last-child
+			margin-left: 90px
+		
+	&__bottom
+		width: 100%
+
+	&__bottom-container
+		display: flex
+		justify-content: space-between
+		
+
+
+

@@ -1,0 +1,16 @@
+.welcome
+	font-size: 12px
+
+	&__link
+		color: $c-accent
+		+min(1024)
+			transition: all .2 ease
+
+			&:hover, &:focus
+				text-shadow: 1px 1px $c-accent
+
+		&:active
+			color: darken($c-accent, 17%)
+			text-shadow: 1px 1px $c-accent
+
+

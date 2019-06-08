@@ -1,0 +1,41 @@
+.btn-box 
+	height: 42px
+	margin-top: -6px
+	display: flex
+	font:  400 11px segoe
+	
+	&:last-child
+		margin-left: 24px
+
+	&__link
+		padding: 6px 11px 0
+		line-height: 36px
+		margin-left: 1px
+		background: $c-btn-box
+		+min(1024)	
+			transition: all .3s ease
+
+			&:hover, &:focus
+				background: $c-hover
+
+			&:active
+				background: lighten($c-accent, 15%)
+
+
+		&:first-child
+			margin-left: 0
+		
+		&.is-active
+			background-color: $c-accent
+			color: #fff
+			font-weight: 700
+			+min(1024)
+			
+				&:hover, &:focus
+					background: lighten($c-accent, 8%)
+
+				&:active
+					background: darken($c-accent, 15%)
+
+			
+
