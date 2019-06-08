@@ -7,20 +7,20 @@
 	z-index: 25
 	background-color: #fff
 
+
 	&__top
 		width: 100%
 		background-color: $c-bgc
+		@extend %offset
 
 	&__top-container
-		width: 100%
+		max-width: 1165px
+		margin: 0 auto
 		display: flex
 		justify-content: space-between
 		align-items: center
 		min-height: 45px
-		padding-right: get-vw(145px)
-		padding-left: get-vw(145px)
 		padding-top: 9px
-
 
 	&__top-item
 		display: flex
@@ -28,20 +28,41 @@
 		&:last-child
 			margin-left: 90px
 		
+
 	&__bottom
 		width: 100%
-
+		
 	&__bottom-container
 		width: 100%
 		display: flex
 		justify-content: space-between
 		align-items: center
-		padding: get-vw(35px) get-vw(145px) get-vw(60px) get-vw(145px)
-
+		max-width: 1600px
+		margin: 0 auto
+		padding:
+			top: get-vw(35px) 
+			bottom: get-vw(60px)
+		@extend %offset
 
 	&__bottom-item
 		&:nth-child(2)
 			margin-left: 47px
+
+
+	&__navigation
+		width: 100%
+		max-width: 1600
+		margin: 0 auto
+		border-top: 2px solid $c-bgc
+		@extend %offset
+
+	&__navigation-container
+		background-color: $c-bgc
+		width: 100%
+		display: flex
+		justify-content: flex-start 
+
+
 		
 		
 

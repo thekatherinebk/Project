@@ -1,7 +1,24 @@
 .navigation
 	display: flex
+
 	&__item
 		display: flex
-		
+
+	&__link
+		font: 400 get-rem(14px) $default-font
+		text-transform: uppercase
+		padding: 17.5px 20px
+		+min(1024)
+			transition: all .3s ease 
+
+			&:hover, &:focus
+				color: #fff
+				background-color: $c-accent
+				box-shadow: 0 -2px 0 1px darken($c-accent, 2%)
+
+		&:active
+			color: #fff
+			background-color: darken($c-accent, 10%) 
+
 
 		

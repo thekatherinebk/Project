@@ -1,7 +1,5 @@
 html
-	font-size: 10px
-	+min(760)
-		font-size: 12px
+	font-size: 12px
 	+min(1205)
 		font-size: 15px
 
@@ -10,3 +8,14 @@ body
 	color: $font-grey
 	line-height: 1.6
 	
+%offset
+	padding-right: get-vw(145px)
+	padding-left: get-vw(145px)
+	+m(992)
+		padding:
+			left: 50px
+			right: 50px
+	+m(768)
+		padding: 
+			left: 20px
+			right: 20px
