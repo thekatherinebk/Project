@@ -1,0 +1,47 @@
+.user-menu
+	display: flex
+
+	&__item
+		position: relative
+		display: flex
+		margin-right: 9px
+		
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			right: -4px
+			bottom: 0
+			margin: auto
+			height: 14.4px
+			width: 1px
+			background-color: $c-bgc
+
+		&:last-child 
+			.user-menu__link
+				background-color: $c-bgc
+				+min(1024)
+					&:hover, &:focus
+						background-color: $c-accent
+
+					&:active
+						background-color: darken($c-accent, 10%) 
+
+				
+
+	&__link
+		font: 400 12px segoe
+		background-color: initial
+		padding: 12px
+		line-height: 1.2
+		border-radius: 2px
+		+min(1024)
+			transition: all .3s ease 
+
+			&:hover, &:focus
+				color: #fff
+				background-color: $c-accent
+
+		&:active
+			color: #fff
+			background-color: darken($c-accent, 10%) 

@@ -1,0 +1,29 @@
+.search-form
+	position: relative 
+
+	&__field
+		border: 1px solid rgb(204, 204, 204)
+		border-radius: 2px
+		line-height: 1.2
+		padding: 11px
+		width: 231px
+		color: inherit 
+
+		&:active, &:focus
+			border: 1px solid $c-accent
+			box-shadow: 0 0 0 2px $c-accent
+
+		&:placeholder
+			font: 400 12px segoe
+			color: inherit
+
+	&__btn
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 10px
+		margin: auto
+		z-index: 10
+
+
+		
