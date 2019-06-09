@@ -15,6 +15,7 @@
 
 		<div class="header__top">
 
+
 			<div class="gradient">
 				<div class="gradient__line"></div>
 				<div class="gradient__line"></div>
@@ -30,7 +31,7 @@
 								<use xlink:href="img/sprite.svg#phone" />
 							</svg>
 						</div>
-						<a href="tel:+7771001234" class="phone__number">Call Us +777 (100) 1234</a>
+						<a href="tel:+7771001234" class="phone__number">IIIIIICall Us +777 (100) 1234</a>
 					</div>
 				</div>
 
@@ -341,28 +342,30 @@
 	</main>
 
 	<div class="popup-container">
-		<div class="login-popup">	
-			<button class="login-popup__esc-btn">
+		<div class="popup popup--login">	
+			<button class="popup__esc-btn js-login-esc">
 				<svg class="icon-wrong"><use xlink:href="../img/sprite.svg#wrong" /></svg>
 			</button>		
-			<form class="login-popup__form" action="index.html" method="post">
-				<h3 class="login-popup__title">Login</h3>
-				<input class="login-popup__field" type="text" name="username" placeholder="Username">
-				<input class="login-popup__field" type="password" name="password" placeholder="Password">
-				<input class="login-popup__btn" type="submit" name="" value="Login">
+			<form class="popup__form" action="index.html" method="post">
+				<h3 class="popup__title">Login</h3>
+				<input class="popup__field" type="text" name="username" placeholder="Username">
+				<input class="popup__field" type="password" name="password" placeholder="Password">
+				<input class="popup__btn" type="submit" name="" value="Login">
 			</form>
 		</div>
 		
-		<div class="signup-popup">	
-			<button class="login-popup__esc-btn">
-				<svg class="icon-wrong"><use xlink:href="../img/sprite.svg#wrong" /></svg>
+		<div class="popup popup--signup">	
+			<button class="popup__esc-btn js-signup-esc">
+				<svg class="icon-wrong"><use xlink:href="img/sprite.svg#wrong" /></svg>
 			</button>		
-			<form class="login-popup__form" action="index.html" method="post">
-				<h3 class="login-popup__title">Login</h3>
-				<input class="login-popup__field" type="text" name="username" placeholder="Username" required>
-				<input class="login-popup__field" type="text" name="email" placeholder="Email" required>
-				<input class="login-popup__field" type="password" name="password" placeholder="Password" required>
-				<input class="login-popup__btn" type="submit" name="" value="Sign Up">	
+			<form class="popup__form" action="index.html" method="post">
+				<h3 class="popup__title">Login</h3>
+				<input class="popup__field" type="text" name="username" placeholder="Username" required>
+				<input class="popup__field" type="text" name="email" placeholder="Email" required>
+				<input class="popup__field" type="password" name="password" placeholder="Password" required>
+				<input class="popup__field" type="password" name="password" placeholder="Submit Your Password" required>
+
+				<input class="popup__btn" type="submit" name="" value="Sign Up">	
 			</form>
 		</div>
 

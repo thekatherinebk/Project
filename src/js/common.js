@@ -56,14 +56,27 @@ $('.js-cart-btn').on('mouseleave', function() {
  * Popup initalize
  */
 $('.js-login').click(function(){
-	$('.login-popup').addClass('is-active'); 
+	$('.popup--login').addClass('is-active'); 
 	$('.overlay-popup').addClass('is-active'); 
 	$('body').addClass('blur-filter'); 
 
 })
 
-$('.login-popup__esc-btn').click(function(){
-	$('.login-popup').removeClass('is-active'); 
+$('.js-login-esc').click(function(){
+	$('.popup--login').removeClass('is-active'); 
+	$('.overlay-popup').removeClass('is-active'); 
+	$('body').removeClass('blur-filter'); 
+})
+
+$('.js-signup').click(function(){
+	$('.popup--signup').addClass('is-active'); 
+	$('.overlay-popup').addClass('is-active'); 
+	$('body').addClass('blur-filter'); 
+
+})
+
+$('.js-signup-esc').click(function(){
+	$('.popup--signup').removeClass('is-active'); 
 	$('.overlay-popup').removeClass('is-active'); 
 	$('body').removeClass('blur-filter'); 
 })
