@@ -337,47 +337,41 @@
 			
 
 		</section>
-
-		<form class="login-popup" action="index.html" method="post">
-			<h3 class="login-popup__title">Login</h3>
-			<input class="login-popup__field" type="text" name="username" placeholder="Username">
-			<input class="login-popup__field" type="password" name="password" placeholder="Password">
-			<input class="login-popup__btn" type="submit" name="" value="Login">
-		</form>
-
-		<div class="overlay-popup"></div>
-
-		<!-- <div class="pop-up">
-			<div class="pop-up__container">
-				<div class="pop-up__item">
-		
-					
-					<div class="log-in-pop-up">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio accusamus mollitia explicabo necessitatibus, odit delectus praesentium. A tempora, eius quis et quisquam, aspernatur itaque. Minima tempora veniam cumque neque expedita?	
-				</div>
-		
-		
-		
-					<div class="sign-up-pop-up">
-					</div>
-		
-				</div>
-		
-				<div class="pop-up__item" id="popup">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet atque vitae quas. Quaerat cupiditate ea non deleniti veritatis excepturi amet, ex itaque dignissimos, ut vitae quam nobis fugit, culpa molestiae!
-				</div>
-			</div>
-		</div> -->
 		
 	</main>
 
-	<div role="main" class="ui-content"> <a href="#" class="ui-btn ui-btn-b ui-btn-icon-left ui-icon-info ui-corner-all" id="foo">Click here</a>
+	<div class="popup-container">
+		<div class="login-popup">	
+			<button class="login-popup__esc-btn">
+				<svg class="icon-wrong"><use xlink:href="../img/sprite.svg#wrong" /></svg>
+			</button>		
+			<form class="login-popup__form" action="index.html" method="post">
+				<h3 class="login-popup__title">Login</h3>
+				<input class="login-popup__field" type="text" name="username" placeholder="Username">
+				<input class="login-popup__field" type="password" name="password" placeholder="Password">
+				<input class="login-popup__btn" type="submit" name="" value="Login">
+			</form>
+		</div>
+		
+		<div class="signup-popup">	
+			<button class="login-popup__esc-btn">
+				<svg class="icon-wrong"><use xlink:href="../img/sprite.svg#wrong" /></svg>
+			</button>		
+			<form class="login-popup__form" action="index.html" method="post">
+				<h3 class="login-popup__title">Login</h3>
+				<input class="login-popup__field" type="text" name="username" placeholder="Username" required>
+				<input class="login-popup__field" type="text" name="email" placeholder="Email" required>
+				<input class="login-popup__field" type="password" name="password" placeholder="Password" required>
+				<input class="login-popup__btn" type="submit" name="" value="Sign Up">	
+			</form>
+		</div>
 
-	
+		<div class="overlay-popup"></div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="js/vendors.min.js"></script>
 	<script src="js/script.min.js"></script> 
 
 </body>
-</html>
+</html>	

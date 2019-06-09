@@ -83,8 +83,7 @@ function scriptsVendors() {
   return gulp.src([
       'src/libs/owl.carousel/owl.carousel.min.js',
       'src/libs/equalHeights/equalheights.js',
-      'src/libs/slick-carousel/slick/slick.min.js', 
-      'src/libs/magnific-popup/jquery.magnific-popup.min.js'
+      'src/libs/slick-carousel/slick/slick.min.js'
       //,
      // 'node_modules/svg4everybody/dist/svg4everybody.min.js'
     ])

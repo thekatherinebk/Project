@@ -61,3 +61,9 @@ $('.js-login').click(function(){
 	$('body').addClass('blur-filter'); 
 
 })
+
+$('.login-popup__esc-btn').click(function(){
+	$('.login-popup').removeClass('is-active'); 
+	$('.overlay-popup').removeClass('is-active'); 
+	$('body').removeClass('blur-filter'); 
+})

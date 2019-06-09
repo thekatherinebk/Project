@@ -14,7 +14,7 @@
   text-align: center
   z-index: 200
   transition: all .25s ease
-  box-shadow: 2px 2px 25px 10px $c-accent
+  box-shadow: 0px 0px 5px .5px darken($c-accent, 5%)
 
   &.is-active
      top: 50%
@@ -43,6 +43,16 @@
     &:focus
       width: 280px
       border-color: $c-accent
+
+  &__esc-btn
+    position: absolute
+    right: 0
+    top: 0
+    width: 30px 
+    height: 30px
+    border-radius: 30px
+    transform: translate(50%, -50%)
+    background-color: darken($c-accent, 10%)
 
   &__btn
     border: 0
