@@ -1,0 +1,45 @@
+.user-cart
+	display: none
+	flex-direction: column
+	position: absolute
+	width: 310px
+	padding: 20px 22px
+	background-color: #fff
+	box-shadow: 0 0 2px 3px $c-bgc
+	
+
+	&__title
+		margin-bottom: 10px
+		width: 100%
+
+	&__item
+		width: 100%
+		padding: 10px 0 
+		border-bottom: 1px solid darken($c-bgc, 15%)
+
+		&:nth-child(3)
+			border-bottom: 0px
+	
+	&__btns
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+
+	&__btn
+		width: 48%
+		text-align: center
+		line-height: 33px
+		height: 33px
+		background-color: $c-accent
+		color: #fff
+
+
+
+	
+
+	&.is-active
+		display: flex 
+		z-index: 30
+		right: 2px

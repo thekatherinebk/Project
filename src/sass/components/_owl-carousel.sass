@@ -1,0 +1,50 @@
+.carousel
+	&.owl-carousel
+		.owl-nav 
+			button
+				&.owl-prev, &.owl-next
+					position: absolute
+					top: 50%
+					margin-top: -10.5px
+					height: 42px
+					width: 42px
+					line-height: 42px
+					text-align: center
+					background-color: rgba(255, 255, 255, 0.780)
+					+min(1024)
+						&:hover, &:focus
+							background-color: rgba(255, 255, 255, 1)
+					
+				&.owl-prev
+					left: 0
+
+				&.owl-next
+					right: 0
+		
+		.owl-dots
+			position: absolute
+			bottom: 20px
+			right: 20px
+
+
+			.owl-dot
+				width: 20px
+				height: 20px
+				border-radius: 2rem
+				border: 5px solid #fff
+				background-color: rgba(#000, .8)
+				opacity: .6
+				margin: 0 6px
+				transition: all .3s ease 
+				+min(1024)
+					&:hover, &:focus
+						background-color: #fff
+						border-color: rgba(#000, .8)
+
+				&:last-child
+					margin-right: 0
+				
+
+				&.active
+					background-color: #fff
+					border-color: rgba(#000, .8)

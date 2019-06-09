@@ -19,6 +19,8 @@
 
 		&:last-child 
 			margin-right: 0
+			&:after
+				display: none
 			.user-menu__link
 				background-color: $c-bgc
 				+min(1024)
@@ -31,6 +33,7 @@
 				
 
 	&__link
+		white-space: nowrap
 		font: 400 12px segoe
 		background-color: initial
 		padding: 12px
