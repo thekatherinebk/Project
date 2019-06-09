@@ -36,6 +36,9 @@ $('.js-cart-btn').on('mouseleave', function() {
 })
 
 
+$('.js-cart-btn').on('click', function() {
+	$('.user-cart').toggleClass('is-active'); 	
+})
 
 /*
  *initializing owl-carousel on .carousel 
@@ -80,3 +83,24 @@ $('.js-signup-esc').click(function(){
 	$('.overlay-popup').removeClass('is-active'); 
 	$('body').removeClass('blur-filter'); 
 })
+
+$('.overlay-popup').click(function(){
+	$('.popup').removeClass('is-active'); 
+	$('.overlay-popup').removeClass('is-active'); 
+	$('body').removeClass('blur-filter'); 
+})
+
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) { //use `this`, not `document`
+        $('.header__top').hide(300);
+
+        $('.header__bottom-container').addClass('padding--sm');
+
+        $('.content').addClass('padding-t--sm');
+    } else {
+        $('.header__top').show(300);
+        $('.header__bottom-container').removeClass('padding--sm');
+        $('.content').removeClass('padding-t--sm');
+    }
+}); 

@@ -9,6 +9,9 @@
 		height: 56px
 		margin-right: 11px
 
+	&__img-link
+		cursor: pointer
+
 	&__info
 		margin-right: 11px
 		flex-grow: 1
@@ -16,6 +19,14 @@
 	&__title
 		font-family: segoe
 		color: $font-grey
+		cursor: pointer
+		+min(1024)
+			transition: .2s ease 
+			&:hover
+				color: $c-accent
+
+		&:active
+			color: $c-accent
 
 	&__del-btn
 		cursor: pointer

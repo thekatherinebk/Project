@@ -1,6 +1,8 @@
 .blur-filter 
     // filter: blur(2px)
     overflow: hidden
+    +m(992)
+      overflow: auto
 
 
 .popup
@@ -15,10 +17,20 @@
   z-index: 200
   transition: all .25s ease
   box-shadow: 0px 0px 5px .5px darken($c-accent, 5%)
+  +m(992)
+    padding: 16px
+  +m(768)
+    width: 290px
+ 
+
 
   &.is-active
-     top: 50%
-     transform: translate(-50%, -50%) scale(1)
+    top: 50%
+    transform: translate(-50%, -50%) scale(1)
+    +m(480)
+      top: 10%
+      transform: translate(-50%, 0) scale(1)
+
 
   &__title
     color: $c-accent
@@ -39,10 +51,14 @@
     color: darken($c-accent, 20%)
     border-radius: 24px
     transition: 0.25s 
-
+    +m(992)
+      margin: 10px auto
+      &:focus
+        width: 240px
     &:focus
       width: 280px
       border-color: $c-accent
+    
 
   &__esc-btn
     position: absolute
@@ -61,7 +77,7 @@
     margin: 20px auto
     text-align: center
     border: 2px solid $c-accent
-    padding: 14px 40px
+    padding: 10px 40px
     outline: none
     color: white
     border-radius: 24px
@@ -71,6 +87,8 @@
       &:hover
         background: $c-accent
         color: #fff
+    +m(992)
+      margin: 10px auto
 
 .overlay-popup
   position: fixed

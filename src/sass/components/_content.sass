@@ -6,6 +6,12 @@
 	margin: 0 auto
 	position: relative
 	@extend %offset
+	+min(992)
+		transition: .3s ease
 	+m(992)
 		padding-top: 100px
+
+	&.padding-t--sm
+		padding-top: 150px
+
 

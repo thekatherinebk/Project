@@ -12,15 +12,15 @@
 <body>
 
 	<header class="header">
-
-		<div class="header__top">
-
-
 			<div class="gradient">
 				<div class="gradient__line"></div>
 				<div class="gradient__line"></div>
 				<div class="gradient__line"></div>
 			</div>
+
+
+		<div class="header__top">
+
 
 			<div class="header__top-container">
 				
@@ -98,10 +98,10 @@
 							<a href="#" class="user-menu__link">My Wishlist</a>
 					</div>
 						<div class="user-menu__item">
-							<a href="#" class="user-menu__link">Log In</a>
+							<a href="#" class="user-menu__link js-login">Log In</a>
 					</div>
 						<div class="user-menu__item">
-							<a href="#" class="user-menu__link">Sign Up</a>
+							<a href="#" class="user-menu__link js-signup">Sign Up</a>
 					</div>
 						<div class="user-menu__item">
 							<button class="user-menu__link js-cart-btn">
@@ -118,10 +118,13 @@
 						<div class="user-cart__title">Recently added item(s)</div>
 						<div class="user-cart__item">
 							<div class="product">
-								<div class="product__img"><img src="img/diffuser.png" alt="fragnance diffuser"></div>
-
+								<div class="product__img">
+									<a href="#" class="product__img-link">
+										<img src="img/diffuser.png" alt="fragnance diffuser">
+									</a>
+								</div>
 								<div class="product__info">
-									<div class="product__title">Faddywax Fragrance Diffuser Set Gardenia</div>
+									<a class="product__title">Faddywax Fragrance Diffuser Set Gardenia</a>
 									<div class="product__text">1 x $399.00</div>
 								</div>
 								<div class="product__del-btn">
@@ -129,19 +132,19 @@
 										<use xlink:href="img/sprite.svg#wrong" />
 									</svg>
 								</div>
-
 							</div>
 						</div>
 						<div class="user-cart__item">
 							<div class="product">
-								<div class="product__img"><img src="img/caldrea.png" alt="caldrea"></div>
-
+								<div class="product__img">
+									<a href="#" class="product__img-link">
+										<img src="img/caldrea.png" alt="caldrea">
+									</a>
+								</div>
 								<div class="product__info">
-
 									<div class="product__title">Caldrea Linen and Room Spray</div>
 									<div class="product__text">1 x $123.00</div>
 								</div>
-
 								<div class="product__del-btn">
 									<svg class="icon-wrong">
 										<use xlink:href="img/sprite.svg#wrong" />
@@ -211,8 +214,8 @@
 					<ul class="navigation-mobile__user-nav">
 						<li><a href="#">My Account</a></li>
 						<li><a href="#">My Wishlist </a></li>
-						<li><a href="#">Log In</a></li>
-						<li><a href="#">Sign Up</a></li>
+						<li><a href="#" class="js-login">Log In</a></li>
+						<li><a href="#" class="js-signup">Sign Up</a></li>
 						<li><a href="#">Cart</a></li>	
 					</ul>
 					
@@ -245,9 +248,9 @@
 		</div>	
 		
 	</header>
-	
+	<div>
 	<main class="content">
-
+	
 		<section class="banner">
 		
 			<div class="banner__item">
@@ -340,11 +343,12 @@
 		</section>
 		
 	</main>
+	</div>
 
 	<div class="popup-container">
 		<div class="popup popup--login">	
 			<button class="popup__esc-btn js-login-esc">
-				<svg class="icon-wrong"><use xlink:href="../img/sprite.svg#wrong" /></svg>
+				<svg class="icon-wrong"><use xlink:href="img/sprite.svg#wrong" /></svg>
 			</button>		
 			<form class="popup__form" action="index.html" method="post">
 				<h3 class="popup__title">Login</h3>
