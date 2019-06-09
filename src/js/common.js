@@ -47,7 +47,7 @@ $('.js-cart-btn').on('mouseleave', function() {
         smartSpeed: 700,
         nav: true,
         dots: true, 
-        navText: ['<svg class="icon-arrow"><use xlink:href="../img/sprite.svg#back" /></svg', '<svg class="icon-arrow"><use xlink:href="img/sprite.svg#next"/></svg'],
+        navText: ['<svg class="icon-arrow"><use xlink:href="img/sprite.svg#back" /></svg', '<svg class="icon-arrow"><use xlink:href="img/sprite.svg#next"/></svg'],
 
     });
 
