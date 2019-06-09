@@ -1,0 +1,81 @@
+.blur-filter 
+    // filter: blur(2px)
+    overflow: hidden
+
+
+.login-popup
+  width: 380px
+  padding: 40px
+  position: fixed
+  top: 0
+  left: 50%
+  transform: translate(-50%,-100%) scale(.5)
+  background: $c-bgc
+  text-align: center
+  z-index: 200
+  transition: all .25s ease
+  box-shadow: 2px 2px 25px 10px $c-accent
+
+  &.is-active
+     top: 50%
+     transform: translate(-50%, -50%) scale(1)
+
+  &__title
+    color: $c-accent
+    text-transform: uppercase
+    font-weight: 500
+    font-size: 24px
+
+  &__field
+    border: 0
+    background: none
+    display: block
+    margin: 20px auto
+    text-align: center
+    border: 2px solid darken($c-accent, 20%)
+    padding: 14px 10px
+    width: 200px
+    outline: none
+    color: darken($c-accent, 20%)
+    border-radius: 24px
+    transition: 0.25s 
+
+    &:focus
+      width: 280px
+      border-color: $c-accent
+
+  &__btn
+    border: 0
+    background: none
+    display: block
+    margin: 20px auto
+    text-align: center
+    border: 2px solid $c-accent
+    padding: 14px 40px
+    outline: none
+    color: white
+    border-radius: 24px
+    transition: 0.35s ease
+    cursor: pointer
+    +min(1024)
+      &:hover
+        background: $c-accent
+        color: #fff
+
+.overlay-popup
+  position: fixed
+  top: 0
+  left: 0
+  width: 0
+  height: 0
+  z-index: 150
+  opacity: 0
+  background-color: darken($c-accent, 40%)
+  &.is-active
+    opacity: .7
+    width: 100vw
+    height: 100vh
+
+
+
+  

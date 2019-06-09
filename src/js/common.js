@@ -47,6 +47,17 @@ $('.js-cart-btn').on('mouseleave', function() {
         smartSpeed: 700,
         nav: true,
         dots: true, 
-        navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
+        navText: ['<svg class="icon-arrow"><use xlink:href="../img/sprite.svg#back" /></svg', '<svg class="icon-arrow"><use xlink:href="img/sprite.svg#next"/></svg'],
 
     });
+
+
+/*
+ * Popup initalize
+ */
+$('.js-login').click(function(){
+	$('.login-popup').addClass('is-active'); 
+	$('.overlay-popup').addClass('is-active'); 
+	$('body').addClass('blur-filter'); 
+
+})

@@ -26,6 +26,7 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
+		padding-right: 15px
 
 
 	&__btn
@@ -33,8 +34,29 @@
 		text-align: center
 		line-height: 33px
 		height: 33px
+		line-height: 33px
 		background-color: $c-accent
+		font-family: segoe
+		font-size: 11px
 		color: #fff
+		+min(1024)
+			transition: all .3s ease
+			&:focus, &:hover
+				background-color: lighten($c-accent, 10%)
+
+		&:active
+			background-color: darken($c-accent, 10%)
+
+		&:last-child
+			background-color: $c-icons
+			+min(1024)
+				transition: all .3s ease
+				&:focus, &:hover
+					background-color: lighten($c-icons, 10%)
+
+			&:active
+				background-color: darken($c-icons, 10%)
+
 	
 
 	&.is-active

@@ -1,0 +1,45 @@
+.icon
+	width: 17px
+	height: 17px
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	&-search
+		right: 0
+		width: 15px
+		height: 15px
+		transition: all .3s ease
+		+min(1024)
+			&:hover, &:focus
+				fill: $c-accent
+
+	&-phone
+		width: 14px
+		height: 14px	
+		+min(1024)
+			transition: all .3s ease
+			&:active, &:hover, &:focus
+				fill: $c-accent
+	
+
+		&:active
+			fill: darken($c-accent, 20%)
+
+	&-basket
+		left: 12px
+
+	&-wrong
+		width: 9px	
+		height: 9px	
+		transition: all .3s ease
+		&:active, &:hover, &:focus
+			fill: $c-accent
+
+
+	&-arrow
+		width: 12px
+		height: 15px
+
+	
+
+
