@@ -12,6 +12,17 @@ $('.btn-box__link').on('click', function (){
 	$(this).toggleClass('is-active');	
 })
 
+
+/*
+ * hamburger 
+ */
+
+$('.hamburger').on('click', function() {
+	$(this).toggleClass('is-active'); 
+	$('.navigation-mobile').toggleClass('is-active');
+})
+
+
 /*
  * Adding pop-up user-cart
  */

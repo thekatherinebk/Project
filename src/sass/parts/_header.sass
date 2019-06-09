@@ -12,6 +12,7 @@
 		width: 100%
 		background-color: $c-bgc
 		@extend %offset
+		
 
 	&__top-container
 		max-width: 1165px
@@ -21,6 +22,8 @@
 		align-items: center
 		min-height: 45px
 		padding-top: 9px
+		+m(992)
+			display: none
 
 	&__top-item
 		display: flex
@@ -43,11 +46,18 @@
 			top: get-vw(35px) 
 			bottom: get-vw(60px)
 		@extend %offset
+		+m(992)
+			padding: 
+				top: 15px 
+				bottom: 6px
+
 
 	&__bottom-item
 		position: relative
 		&:nth-child(2)
 			margin-left: 47px
+			+m(1100)
+				margin-left: 0
 
 
 	&__navigation
@@ -62,6 +72,8 @@
 		width: 100%
 		display: flex
 		justify-content: flex-start 
+		+m(992)
+			display: none
 
 
 		

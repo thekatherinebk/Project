@@ -1,0 +1,41 @@
+.hamburger 
+	display: none
+	padding: 0 10px
+	position: relative
+	z-index: 100
+	transition: all .35s ease-in-out
+	-webkit-tap-highlight-color: transparent
+	+m(992)
+		display: inline-block
+
+	&:hover
+		cursor: pointer
+
+
+	&:active
+		color: darken($c-accent, 25%)
+
+
+	&__line
+		width: 30px
+		height: 3px
+		border-radius: 2rem
+		background-color: $c-accent
+		display: block
+		margin: 6px auto
+		transition: all 0.35s ease-in-out
+
+
+	&.is-active 
+		transition: all .3s ease-in-out
+
+	
+		.hamburger__line
+			transform: translateX(180px)
+			background-color: #fff
+			&:nth-child(2)
+				opacity: 0
+			&:nth-child(1)
+				transform: translateY(9px) rotate(45deg)
+			&:nth-child(3)
+				transform: translateY(-9px) rotate(-45deg)
