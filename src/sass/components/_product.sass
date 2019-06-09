@@ -1,0 +1,25 @@
+.product
+	width: 100%
+	display: flex
+	align-items: flex-start
+	font-size: 12px
+
+	&__img
+		width: 56px
+		height: 56px
+		margin-right: 11px
+
+	&__info
+		margin-right: 11px
+		flex-grow: 1
+
+	&__title
+		font-family: segoe
+		color: $font-grey
+
+	&__del-btn
+		cursor: pointer
+		padding: 0 10px 5px 
+		+min(1024)
+			&:hover, &:focus
+				color: $c-accent

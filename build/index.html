@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Breeze</title>
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	
@@ -105,20 +105,31 @@
 					</div>
 					
 
-					<div class="user-cart">
+					<div class="user-cart js-cart-btn">
 						<div class="user-cart__title">Recently added item(s)</div>
 						<div class="user-cart__item">
 							<div class="product">
-								<div class="product__img"></div>
-								<div class="product__title">Faddywax Fragrance Diffuser Set Gardenia</div>
-								<div class="product__info">1 x $399.00</div>
+								<div class="product__img"><img src="/img/diffuser.png" alt="fragnance diffuser"></div>
+
+								<div class="product__info">
+									<div class="product__title">Faddywax Fragrance Diffuser Set Gardenia</div>
+									<div class="product__text">1 x $399.00</div>
+								</div>
+								<div class="product__del-btn">X</div>
+
 							</div>
 						</div>
 						<div class="user-cart__item">
 							<div class="product">
-								<div class="product__img"></div>
-								<div class="product__title">Caldrea Linen and Room Spray</div>
-								<div class="product__info">1 x $123.00</div>
+								<div class="product__img"><img src="/img/caldrea.png" alt="caldrea"></div>
+
+								<div class="product__info">
+
+									<div class="product__title">Caldrea Linen and Room Spray</div>
+									<div class="product__text">1 x $123.00</div>
+								</div>
+
+								<div class="product__del-btn">X</div>
 							</div>
 						</div>
 						<div class="user-cart__btns">
@@ -269,8 +280,7 @@
 							<div class="carousel__item-subtitle">
 								<p>The new series of natural air fresheners. </p>
 								<p>Febreze Noticeables Meadows & Rain </p>
-								<p>Air Freshener Refill.</p>
-								
+								<p>Air Freshener Refill.</p>	
 							</div>
 						</div>
 					</div>
@@ -280,25 +290,31 @@
 			<div class="banner__item">
 				<div class="promo">
 					<div class="promo__item">
-						<img src="/img/" alt="sale" class="promo__img">
-						<div class="promo__title">
+						<div class="promo__item-img">
+							<img src="/img/sale.png" alt="sale" class="img-responsive">
+						</div>
+						<h3 class="promo__item-title">
 							Best price
-							<div class="promo__title-light">this week</div>
-						</div>
+							<div class="promo__item-title--light">this week</div>
+						</h3>
 					</div>
 					<div class="promo__item">
-						<img src="/img/" alt="new smells" class="promo__img">
-						<div class="promo__title">
+						<div class="promo__item-img">
+							<img src="/img/smells.png" alt="sale" class="img-responsive">
+						</div>
+						<h3 class="promo__item-title">
 							New smells 
-							<div class="promo__title-light">in the next series</div>
-						</div>
+							<div class="promo__item-title-light">in the next series</div>
+						</h3>
 					</div>
 					<div class="promo__item">
-						<img src="/img/" alt="natural" class="promo__img">
-						<div class="promo__title">
-							Only natural
-							<div class="promo__title-light">air freshers</div>
+						<div class="promo__item-img">
+							<img src="/img/natural.png" alt="sale" class="img-responsive">
 						</div>
+						<h3 class="promo__item-title">
+							Only natural
+							<div class="promo__item-title-light">air freshers</div>
+						</h3>
 					</div>
 				</div>
 			</div>

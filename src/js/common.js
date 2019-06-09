@@ -27,13 +27,15 @@ $('.hamburger').on('click', function() {
  * Adding pop-up user-cart
  */
 
-$('.js-cart-btn').on('mouseover', function() {
-	$('.user-cart').toggleClass('is-active'); 	
+$('.js-cart-btn').on('mouseenter', function() {
+	$('.user-cart').addClass('is-active'); 	
 })
 
-$('.js-cart-btn').on('click', function() {
-	$('.user-cart').toggleClass('is-active'); 	
+$('.js-cart-btn').on('mouseleave', function() {
+	$('.user-cart').removeClass('is-active'); 	
 })
+
+
 
 /*
  *initializing owl-carousel on .carousel 
