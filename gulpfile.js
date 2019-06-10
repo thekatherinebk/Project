@@ -82,7 +82,8 @@ function scripts() {
 function scriptsVendors() {
   return gulp.src([
       'src/libs/owl.carousel/owl.carousel.min.js',
-      'src/libs/slick-carousel/slick/slick.min.js'
+      'src/libs/slick-carousel/slick/slick.min.js', 
+      'node_modules/svgxuse/svgxuse.min.js'
       //,
      // 'node_modules/svg4everybody/dist/svg4everybody.min.js'
     ])

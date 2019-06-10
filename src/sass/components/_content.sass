@@ -1,17 +1,27 @@
 .content
 	width: 100%
 	max-width: 1600px
-	padding: 
-		top: 271px
 	margin: 0 auto
 	position: relative
-	@extend %offset
 	+min(992)
 		transition: .3s ease
-	+m(992)
-		padding-top: 100px
 
-	&.padding-t--sm
-		padding-top: 150px
+
+	&-wrap
+		@extend %offset
+		padding: 
+			top: 271px
+		+m(992)
+			padding-top: 100px
+		+m(576)
+			padding-top: 80px
+		
+		
+		&.padding-t--sm
+			padding-top: 150px
+			+m(992)
+				padding-top: 100px
+			+m(576)
+				padding-top: 80px
 
 

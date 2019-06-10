@@ -92,12 +92,12 @@ $('.overlay-popup').click(function(){
 
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 200) { //use `this`, not `document`
+    if ($(this).scrollTop() > 150) {
         $('.header__top').hide(300);
 
         $('.header__bottom-container').addClass('padding--sm');
 
-        $('.content').addClass('padding-t--sm');
+        $('.contentwrap').addClass('padding-t--sm');
     } else {
         $('.header__top').show(300);
         $('.header__bottom-container').removeClass('padding--sm');

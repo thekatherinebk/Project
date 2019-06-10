@@ -87,6 +87,7 @@
     "gulp-svgstore": "^7.0.1",
     "nunjucks-includeData": "0.0.9",
     "owl.carousel2.thumbs": "^0.1.8",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "svgxuse": "^1.2.6"
   }
 }
