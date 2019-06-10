@@ -36,7 +36,7 @@ $('.js-cart-btn').on('mouseleave', function() {
 })
 
 
-$('.js-cart-btn').on('click', function() {
+$('.user-menu__link.js-cart-btn').on('click', function() {
 	$('.user-cart').toggleClass('is-active'); 	
 })
 
